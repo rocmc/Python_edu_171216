@@ -1,0 +1,33 @@
+#coding: euc-kr
+
+from tkinter import *
+
+
+def process():
+    e2.insert(0, "123")
+
+window  = Tk()
+
+
+l1 = Label(window , text="È­¾¾")
+l2 = Label(window, text="¼·¾¾")
+
+
+l1.grid(row=0, column=0)
+l2.grid(row=1, column=0)
+
+
+e1 = Entry(window)
+e2 = Entry(window)
+
+e1.grid(row=0, column=1)
+e2.grid(row=1, column=1)
+
+b1 = Button(window, text="È­¾¾¡æ¼·¾¾", command=process)
+b2 = Button(window, text="¼·¾¾¡æÈ­¾¾")
+b1.grid(row=2, column=0)
+b2.grid(row=2, column=1)
+
+window.mainloop()
+
+

@@ -1,0 +1,23 @@
+#coding: euc-kr
+from tkinter import *
+
+window  = Tk()
+
+l1 = Label(window, text="È­¾¾")
+l2 = Label(window, text="¼·¾¾")
+l1.pack()
+l2.pack()
+
+e1 = Entry(window)
+e2 = Entry(window)
+e1.pack()
+e2.pack()
+
+b1 = Button(window, text="È­¾¾->¼·¾¾")
+b2 = Button(window, text="¼·¾¾->È­¾¾")
+b1.pack()
+b2.pack()
+
+window.mainloop( )
+
+
